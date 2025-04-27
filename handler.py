@@ -48,6 +48,7 @@ class ModelHandler:
             use_safetensors=True,
             add_watermarker=False,
             local_files_only=True,
+            safety_checker=None
         ).to("cuda")
         base_pipe.enable_xformers_memory_efficient_attention()
 
